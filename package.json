@@ -1,0 +1,40 @@
+{
+  "name": "big-tech-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for searching Big Technology Podcast transcripts - 488 episodes of tech insights",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "big-tech-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:sse": "MCP_MODE=sse node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "big-technology",
+    "podcast",
+    "tech-news",
+    "claude",
+    "anthropic"
+  ],
+  "author": "Ranjan Roy",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "express": "^5.2.1",
+    "flexsearch": "^0.7.43"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

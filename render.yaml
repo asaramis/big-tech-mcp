@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: big-tech-mcp
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:sse
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MCP_MODE
+        value: sse
+      - key: PORT
+        value: 3000
+    healthCheckPath: /health

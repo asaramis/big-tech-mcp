@@ -1,0 +1,11 @@
+[
+  {
+    "podcast_title": "Big Technology Podcast",
+    "episode_title": "Example Episode Title",
+    "date": "2026-01-15",
+    "episode_description": "This is an example episode description",
+    "full_transcript": "This is where the full transcript text would go...",
+    "url": "https://example.com/episode-url",
+    "scraped_at": "2026-01-15T12:00:00Z"
+  }
+]
